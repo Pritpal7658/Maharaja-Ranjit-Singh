@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* This allows the whole page to scroll naturally */
+    overflow-y: auto; 
+}
+
+nav {
+    padding: 10px;
+    font-size: 15px;
+}
+
+hr {
+    width: 50%;
+    margin-left: 0;
+    border: 1px solid black;
+}
+
+/* This container holds the Title and Image at the top */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main-title {
+    color: darkblue;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 200px; /* Reduced slightly to fit better */
+    font-family: fantasy;
+}
+
+.hero-image {
+    width: 40%; /* This takes up the right side */
+    height: auto;
+}
+
+/* This section naturally sits UNDER the top section 
+.content-section {
+    padding: 40px;
+    max-width: 900px;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.2rem;
+}*/
+.main-content {
+    text-align: center;  /* This centers all the text */
+    font-family: rockwell;
+    max-width: 700px;          /* Optional: makes the text block easier to read */
+    margin: 0 auto;      /* Centers the entire block on the page */
+    clear: both;         /* This ensures the text stays BELOW the image */
+}
+
+.main-content hr {
+    width: 50%;          /* Makes the line half-width as you wanted before */
+    margin: 10px auto;   /* Centers the line itself */
+}
+
+h2 {
+    color: #d4af37;
+    font-size: 30px;               /* Larger size for section titles */
+    margin-top: 30px;              /* Adds space above the heading */
+    margin-bottom: 15px;           /* Space between heading and paragraph */
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 20px;           /* Creates the clear gap between paragraphs */
+}
+
+strong {
+    font-weight: 700;              /* Makes specific words stand out */
+}
+
+h3 {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
