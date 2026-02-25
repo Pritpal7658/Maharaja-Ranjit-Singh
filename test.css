@@ -79,5 +79,28 @@ h3 {
     color: black;
     font-size: 50px;
     font-weight: bold;
-    
+}
+
+#social-media {
+    text-align: center;
+    padding: 40px;
+    background-color:#E7CD78; /* Light grey background */
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    text-decoration: none;
+    color: #0077b5; /* Official LinkedIn Blue */
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #0077b5;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    background-color: #0077b5;
+    color: white;
 }
