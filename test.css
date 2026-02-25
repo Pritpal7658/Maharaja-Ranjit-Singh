@@ -34,6 +34,7 @@ hr {
     /*font-size: 100px;  Reduced slightly to fit better */
     font-family: fantasy;
     font-size: clamp(5rem, 13vw, 13rem);    
+    white-space: pre-line;  
 }
 
 
@@ -107,3 +108,4 @@ h3 {
     background-color: #0077b5;
     color: white;
 }
+
