@@ -17,35 +17,38 @@ hr {
     border: 1px solid black;
 }
 
-/* This container holds the Title and Image at the top */
 .top-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
+    
 }
+
 
 .main-title {
     color: darkblue;
     margin: 10px auto;
+    flex: 1;  
     text-align: center;
-    font-size: 200px; /* Reduced slightly to fit better */
+    /*font-size: 100px;  Reduced slightly to fit better */
     font-family: fantasy;
+    font-size: clamp(5rem, 13vw, 13rem);    
 }
+
 
 .hero-image {
-    width: 40%; /* This takes up the right side */
-    height: auto;
+       max-width: 50%;          /* Ensures image fills its half */
+        height: auto;          /* Maintains aspect ratio */
+        display: block;
 }
 
-/* This section naturally sits UNDER the top section 
-.content-section {
-    padding: 40px;
-    max-width: 900px;
-    line-height: 1.8;
-    text-align: center;
-    font-size: 1.2rem;
-}*/
+.main-title, .hero-image{
+  flex: 1;               /* Forces both items to grow equally (50/50) */
+  min-width: 0; 
+}
+
+
 .main-content {
     text-align: center;  /* This centers all the text */
     font-family: rockwell;
